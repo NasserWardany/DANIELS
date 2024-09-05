@@ -1,0 +1,235 @@
+.head {
+    background-image: url(../imgs/bg.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    /* opacity: 50%; */
+    min-height: 100vh;
+    position: relative;
+
+
+}
+
+.head .nav .logo,
+.head .nav ul,
+.head .header h2,
+.head .header p,
+.head .home-layer h5 {
+    z-index: 155005;
+}
+
+.head::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 50%;
+}
+
+.head a {
+    color: white;
+    font-weight: bold;
+}
+
+.head .home-layer h1::after {
+    content: "|";
+    animation: typing 5s linear 3s infinite alternate;
+}
+
+@keyframes typing {
+    0% {
+        content: "J|";
+
+    }
+
+    5% {
+        content: "Je|";
+
+    }
+
+    10% {
+        content: "Jer|";
+
+    }
+
+    15% {
+        content: "Jerr|";
+
+    }
+
+    20% {
+        content: "Jerry|";
+
+    }
+
+    25% {
+        content: "Jerry |";
+
+    }
+
+    30% {
+        content: "Jerry D|";
+
+
+    }
+
+    35% {
+        content: "Jerry Da|";
+    }
+
+    40% {
+        content: "Jerry Dan|";
+    }
+
+    45% {
+        content: "Jerry Dani|";
+    }
+
+    50% {
+        content: "Jerry Danie|";
+    }
+
+    55% {
+        content: "Jerry Daniel|";
+    }
+
+    60% {
+        content: "Jerry Daniels|";
+    }
+
+    60% {
+        content: " D|";
+    }
+
+    65% {
+        content: " De|";
+    }
+
+    70% {
+        content: " Des|";
+    }
+
+    75% {
+        content: " Desi|";
+    }
+
+    80% {
+        content: " Desig|";
+    }
+
+    90% {
+        content: " Design|";
+    }
+
+    95% {
+        content: " Designe|";
+    }
+
+    100% {
+        content: " Designer|";
+    }
+}
+
+
+
+.container .row .info #f:hover {
+    border: 1px solid black;
+    background-color: white !important;
+    color: black !important;
+    transition: 0.5s;
+}
+
+.services .container i {
+    width: 70px;
+    height: 70px;
+    margin: 5px auto;
+    text-align: center;
+    border-radius: 50%;
+    padding: 30px 10px;
+    font-size: 25px;
+}
+
+.services .container i:hover {
+    background-color: black !important;
+    color: white;
+    transition: 0.5s;
+}
+
+.portfolio .container .row .col .card {
+    position: relative;
+}
+
+.portfolio .container .row .col .card::before {
+    content: 'Web Design';
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white !important;
+    opacity: 90%;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.portfolio .container .row .col .card:hover::before {
+    z-index: 1556;
+}
+
+.testimonials [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+/* *********** */
+.section .container i {
+    height: 60px;
+    width: 60px;
+    font-size: 2rem;
+    border-radius: 50%;
+    line-height: 1.55;
+    padding-top: 10px;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0 0 0 10px white;
+    display: block;
+}
+
+.team .container .row .col.card:hover img::before {
+    background-color: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    text-align: center;
+    inset: 5px;
+    opacity: 0;
+    transition: 0.5s;
+    transform: rotateY(180deg) scale(0.5, 0.5);
+}
+
+.team .container .row .col.card img:hover::before {
+    z-index: 1456;
+}
+
+.team .container .row .col .card ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 5px 2px;
+}
+
+.team .container .row .col .card i {
+    font-size: 25px;
+    color: rgb(57, 57, 57);
+}
+
+.contact .container i:hover {
+    background-color: black !important;
+    color: white;
+    transition: 0.5s;
+}
